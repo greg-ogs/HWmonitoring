@@ -22,7 +22,7 @@ class TsFileParseException(Exception):
     pass
 
 
-full_file_path_and_name = "C:/Users/grego/Downloads/IEEEPPG_TEST.ts"
+full_file_path_and_name = "E:/HWmonitoring/IEEEPPG_TEST.ts"
 return_separate_X_and_y=True
 replace_missing_vals_with='NaN'
 """Loads data from a .ts file into a Pandas DataFrame.
@@ -532,5 +532,4 @@ if line_num:
 else:
     raise TsFileParseException("empty file")
 
-
-
+data.to_csv('file1.csv')
